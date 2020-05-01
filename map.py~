@@ -1,0 +1,64 @@
+x = [1,2,3,4,5]
+def add(x):
+	return x*2
+z = list(map(add,x))
+print(z)
+x = list(map(lambda i: i*2,x))
+print(x)
+
+set1 = {1,1,2,3,3,4}
+print(set1)
+
+set2 = {4,4,5,6,6}
+print(set2)
+
+print(set1-set2)
+print(set1.intersection(set2))
+print(set2-set1)
+print(set1.union(set2))
+
+employee = {'id':101, 'name':"Robert"}
+print(employee)
+
+employee['dob'] = "28-04-1999"
+print(employee)
+
+for x in employee:
+	print ("keys = ", x)
+print(employee.keys())
+
+for x in employee:
+	print("values  are  =" , employee[x])
+
+for x,y in employee.items():
+	print(x,y)
+employee.pop('id')
+print(employee)
+
+word = "1Hello World"
+print(word.replace("[0-9]","X"))
+
+remarks  = "Very Good" if(2>1) else "Good"
+print(remarks)
+arr = list(word.split(" "))
+print(arr)
+
+
+
+num = 5
+while (num<10):
+	print(num)
+	num+=1
+	
+for char in "HighRadius":
+	if (char=='i'):
+		continue
+	print(char)
+
+a = 1
+b = 0
+try:
+	c = a/b
+	raise ValueError("Denominator is zero")
+except ValueError as ve
+	print(ve)
